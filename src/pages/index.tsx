@@ -3,6 +3,7 @@ import styles from 'styles/Home.module.scss'
 export default function Home() {
   return (
     <div className={styles.container}>
+        <img className={styles['bg-desktop']} src="/images/bg-desktop.png" alt="Background Image" />
         <section className={styles.tile}>
             <img className={styles.logo} src="/images/logo.svg" alt="Logo" />
             <div className={styles['icon__row']}>
