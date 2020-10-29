@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
         <img className={styles['bg-desktop']} src="/images/bg-desktop.png" alt="Background Image" />
-        <section className={styles.tile}>
+        <div className={styles.tile}>
             <img className={styles.logo} src="/images/logo.svg" alt="Logo" />
             <div className={styles['icon__row']}>
                 <div className={styles['icon__container']}>
@@ -17,9 +17,9 @@ export default function Home() {
                     <img src="/images/icon-upload.svg" alt="Upload Icon" />
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section className={styles.tile}>
+        <div className={styles.tile}>
             You’ve used <strong>815 GB</strong> of your storage
 
 
@@ -34,7 +34,7 @@ export default function Home() {
             <div className={styles['tile__alert']}>
                 <span className={styles['tile__alert-amount']}>185</span> GB Left
             </div>
-        </section>
+        </div>
 
     </div>
   )
