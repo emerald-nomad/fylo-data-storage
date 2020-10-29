@@ -1,0 +1,38 @@
+@import "mixins";
+
+:root {
+  --gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  --pale-blue: hsl(243, 100%, 93%);
+  --grayish-blue: hsl(229, 7%, 55%);
+  --dark-blue: hsl(228, 56%, 26%);
+  --very-dark-blue: hsl(229, 57%, 11%);
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  box-sizing: border-box;
+  color: var(--pale-blue);
+  background: var(--very-dark-blue);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: url("/images/bg-mobile.png") no-repeat center center fixed;
+  background-size: cover;
+
+  @include desktop {
+    background: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
